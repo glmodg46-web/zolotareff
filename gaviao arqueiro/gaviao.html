@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavião Arqueiro</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .outer-container {
+            background-color: #616c84;
+            padding: 15px;
+            border-radius: 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        
+        .main-card {
+            background-color: #3b4257;
+            width: 760px;
+            padding: 25px 30px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            color: #000000;
+        }
+
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Botões arredondados da navegação */
+        .nav-btn {
+            background-color: #d1d5db;
+            border: none;
+            padding: 6px 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #111827;
+            cursor: pointer;
+        }
+
+        /* Título principal amarelo/dourado */
+        .main-title {
+            text-align: center;
+            color: #d2c38a;
+            font-size: 20px;
+            margin: 0 0 15px 0;
+            font-weight: normal;
+        }
+
+        /* Container da imagem principal com fundo escuro */
+        .hero-image-container {
+            background-color: #1d212b;
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-image-container img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        /* Texto descritivo centralizado */
+        .description-text {
+            font-size: 11px;
+            line-height: 1.4;
+            text-align: center;
+            padding: 0 10px;
+            margin-bottom: 25px;
+            color: #0d0d0d;
+            font-weight: 500;
+        }
+
+        /* Grid inferior contendo as 3 miniaturas */
+        .thumbnails-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        /* Caixa preta ao redor de cada miniatura */
+        .thumb-box {
+            background-color: #1d212b;
+            padding: 12px;
+            border-radius: 20px;
+            width: 120px;
+            height: 120px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thumb-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Moldura Externa -->
+    <div class="outer-container">
+        
+        <!-- Cartão Interno -->
+        <div class="main-card">
+            
+            <!-- Menu Superior -->
+            <nav class="navbar">
+                <div class="nav-left">
+                    <button class="nav-btn">Home</button>
+                    <button class="nav-btn">About</button>
+                </div>
+                <button class="nav-btn">Login</button>
+            </nav>
+
+            <!-- Título -->
+            <h1 class="main-title">Gavião Arqueiro</h1>
+
+            <!-- Bloco de Imagem Principal -->
+            <div class="hero-image-container">
+                <img src="img/gaviaoarqeuiro.jpg" alt="Gavião Arqueiro Principal">
+            </div>
+
+            <!-- Parágrafo de Texto -->
+            <p class="description-text">
+                Gavião Arqueiro, é um super-herói da Marvel Comics criado por Stan Lee e Tom Hack, estreando em 
+                1964. Sem superpoderes, é um exímio atirador, membro crucial dos Vingadores e ex-agente da 
+                S.H.I.E.L.D., conhecido pela precisão técnica e por já ter assumido as identidades de Golias e Ronin.
+            </p>
+
+            <!-- Grid de Fotos Inferiores -->
+            <div class="thumbnails-grid">
+                <div class="thumb-box">
+                    <img src="img/arqueiro.jpg" alt="Miniatura 1">
+                </div>
+                <div class="thumb-box">
+                    <img src="img/images.jpg" alt="Miniatura 2">
+                </div>
+                <div class="thumb-box">
+                    <img src="img/gaviao-arqueiro-1.jpg" alt="Miniatura 3">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
